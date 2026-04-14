@@ -1,0 +1,89 @@
+* {
+    margin: auto;
+}
+
+.square {
+    border: 5px solid red;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+
+.circle {
+    border: 5px solid green;
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.rectangle {
+    border: 5px solid yellow;
+    background-color: yellow;
+    width: 200px;
+    height: 100px;
+    /* border-radius: 50%; */
+}
+
+.oval {
+    border: 5px solid blue;
+    background-color: blue;
+    width: 200px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.daimond {
+    border: 5px solid pink;
+    background-color: pink;
+    width: 100px;
+    height: 100px;
+    transform: rotate(45deg);
+    /* transform: skew(-30deg); */
+}
+.parallel{
+    border: 5px solid purple;
+    background-color: purple;
+    width: 100px;
+    height: 100px;
+    transform: skew(-20deg);
+}
+
+.cube {
+    position: relative;
+    border: 5px solid black;
+    width: 100px;
+    height: 100px;
+    border-top: 50px solid red;
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid yellow;
+    border-left: 50px solid green;
+    border-radius: 50%;
+
+}
+.cube1{
+    width: 50px;
+    height: 100px;
+    background-color: blue;
+    position: absolute;
+    right:-20px;
+    top:70px
+}
+.leaf{
+    border: 5px solid slateblue;
+    background-color: slateblue;
+    width:100px;
+    height:100px;
+    border-top-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+}
+.triangle{
+    width:0;
+    height:0;
+    border-left: 75px solid #555;
+    border-right: 75px solid transparent;
+    border-bottom: 75px solid  #555;
+    border-top: 75px solid transparent;
+    
+
+}

@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+#header{
+    width: 100%;
+    border: 1px solid black;
+    background: rgba(0, 0, 128, 0.512);
+    color: white;
+    text-align: center;
+    padding: 2vh 0;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+#header ul{
+    display: flex;
+    justify-content: space-around;
+}
+#header a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background: yellow;
+    position: relative;
+}
+.container img{
+    width: 100%;
+    height: 100%;
+}
+.container h1{
+    color: white;
+    position: absolute;
+    top: 30vh;
+    left: 60%;
+}
+.container2{
+    height: 100vh;
+    width: 100%;
+    background: lightblue;
+    /* position: relative; */
+}
+.container2 h1{
+    padding: 2vh 0;
+    text-align: center;
+    background: navy;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.container2 img{
+    height: 30vh;
+    width: 30vw;
+    filter: blur(5px);
+    transition: all .5s;
+}
+.container2 img:hover{
+    box-shadow: 0 0 10px gray;
+    filter: blur(0);
+    transform: scale(1.2);
+}
+.container2 .images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 5vh;
+    margin-top: 5vh;
+}
+.about{
+    background: yellow;
+    height: 50vh;
+    width: 100%;
+}
+.about h1{
+    padding: 2vh 1vw;
+}
+.about p{
+    width: 80%;
+    border: 1px solid black;
+    margin: 2vh auto;
+    text-align: justify;
+    padding: 1vh 1vw;
+    text-indent: 10vw;
+    opacity: .2;
+    transition: all .5s;
+}
+.about p:hover{
+    opacity:1;
+    transform:scale(1.1);
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+    background-color:crimson;
+    color: white;
+
+}
+
+.container3{
+    height: 50vh;
+    width: 100%;
+    background: lightblue;
+    /* margin: 5px; */
+    /* position: relative; */
+}
+.container3 > form{
+    background-color: chartreuse;
+    width: 300px;
+    margin: 2vh auto;
+    border: 3px solid red;
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+}
+form > input{
+    width: 250px;
+    border: 2px solid red;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+}
+.btn{
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color: red;
+    color: white;
+    font-size: large;
+    display: flex;
+    margin: 5px auto; 
+    transition: .2s;
+}
+.btn:hover{
+    background-color: white;
+    color: red;
+    border: 2px solid red;
+}

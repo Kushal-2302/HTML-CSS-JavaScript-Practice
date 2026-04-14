@@ -1,0 +1,119 @@
+button{
+    display: block;
+    margin: 5vh auto;
+    width: 30%;
+    font-weight: bold;
+    font-size: large;
+    padding: 2vh 1vw;
+    border: 2px solid black;
+    columns: white;
+    border-radius: 15px;
+    background: none;
+    cursor: pointer;
+    transition: .3s;
+}
+button:hover{
+    background: black;
+    color: white;
+    box-shadow: 0 0 20px gray;
+}
+button:active{
+    transform: scale(.9);
+}
+a{
+    display: block;
+    margin: 5vh auto;
+    width: 28%;
+    font-weight: bold;
+    font-size: large;
+    padding: 2vh 1vw;
+    border: 2px solid black;
+    color: black;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .3s;
+    text-decoration: none;
+    font-family: sans-serif;
+    text-align: center;
+}
+a:hover{
+    background: black;
+    color: white;
+    box-shadow: 1 1 10px gray;
+}
+a:active{
+    transform: scale(.9);
+}
+p{
+    width: 50%;
+    height: 40vh;
+    margin: 10vh auto;
+    padding: 2vh 2vw;
+    border: 1px solid black;
+    font-size: 20px;
+    text-align: justify;
+    text-indent: 10vw;
+    font-family: sans-serif;
+    opacity: .2;
+    transition: all .5s;
+    overflow: hidden;
+}
+p:hover{
+    opacity: 1;
+    transform: scale(1.2);
+    box-shadow: 0 0 10px black;
+    overflow-y: scroll;
+}
+p::first-line{
+    color: blue;
+}
+p::first-letter{
+    font-style: italic;
+    font-weight: bold;
+    font-style: 50px;
+}
+p::selection{
+    background: black;
+    color: gold;
+}
+p::after{
+    content: "*****";
+    color: red;
+}
+ul{
+    /* list-style-type: upper-roman;
+    list-style-position: inside;
+    list-style-image: url('./'); */
+    list-style-image: linear-gradient(red,yellow,green);
+    list-style-position: inside;
+}
+li{
+    text-align: center;
+}
+li:nth-child(even){
+    background: yellow;
+}
+li::before{
+    content:"😎";
+}
+
+table{
+    height: 40vh;
+    width: 50%;
+    border-collapse: collapse;
+}
+table, th, td{
+    border: 2px solid black;
+    margin: auto;
+}
+/* interview question */
+td{
+    text-align: center;
+    font-weight: bold;
+}
+/* if we give space after tr it will select column or else row */
+tr:nth-child(even){
+    background: lightgray;
+}
+
+/* knight bite web page */

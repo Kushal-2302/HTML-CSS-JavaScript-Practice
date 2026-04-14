@@ -1,0 +1,37 @@
+.box{
+    border: 1px solid black;
+    height: 150px;
+    width: 150px;
+    background: red;
+    margin: auto;
+
+    animation-name: changeContent;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+
+@keyframes changeContent {
+    from{
+        background: skyblue;
+        border-radius: 0%;
+    }
+    to{
+        background: palevioletred;
+        border-radius: 50%;
+        transform: rotate(360deg);
+    }
+} 
+ /* @keyframes changeContent {
+    0%{
+        border-radius: 0%;
+        background: skyblue;
+    }
+    50%{
+        border-radius: 50%;
+        transform: rotate(360deg);
+        background: palevioletred;
+    }
+    100%{
+        border-radius: 0%;
+    }
+ } */

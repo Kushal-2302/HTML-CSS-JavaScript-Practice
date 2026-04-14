@@ -1,0 +1,42 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.box{
+    border: 2px solid black;
+    width: 150px;
+    height: 200px;
+}
+.clr1{
+    /* background-image: linear-gradient(red,yellow,blue, black, pink, orange); */
+    
+    /* background-image: linear-gradient( black, red); */
+    /* (to bottom (default), to left/ to right, to top, to bottom right, to bottom left */
+
+    background-image: linear-gradient(to top right, black 50%, red 50%);
+}
+
+.clr2{
+    /* background-image: radial-gradient(black, yellow); */
+    /* background-image: radial-gradient(circle at right, blue, white, blue); */
+
+    background-image: radial-gradient(circle at bottom, red 50%, yellow 50%, orange);
+}
+
+.clr3{
+    background-image: conic-gradient(black, yellow, red, black);
+}
+
+.r1{
+    background-image: repeating-linear-gradient(black, yellow 15%);
+}
+.r2{
+    background-image: repeating-radial-gradient(black, yellow 30%);
+}
+.r3{
+    background-image: repeating-conic-gradient(black, yellow 20%);
+}

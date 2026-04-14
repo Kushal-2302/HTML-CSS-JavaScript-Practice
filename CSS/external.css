@@ -1,0 +1,37 @@
+ /* Element selector */
+        h2{
+            color: red;
+        }
+        p{
+            color: blue
+        }
+
+        /* ID selector */
+        #para{
+            background-color: aqua;
+        }
+
+        /* Class selector */
+        .abc{
+            background-color: black;
+        }
+
+        /* Group selector */
+        h1,h2, #para{
+            text-align: center;
+        }
+        
+        /* Universal selector */
+        *{
+            border: 1px solid black;
+            background-color: lightgreen;
+        }
+
+        /* Attribute selector */
+        input[type="email"]{
+            background-color: red;
+            width: 400px;
+            height: 30px;
+            border-radius: 10px;
+            color: white;
+        }

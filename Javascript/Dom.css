@@ -1,0 +1,33 @@
+#box{
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    margin: 5vh auto;
+}
+.red{
+    background: red;
+}
+.yellow{
+    background: yellow;
+}
+
+/* onOff button */
+.on{
+    width: 100px;
+    height: 50px;
+    border-radius: 30px;
+    color: white;
+}
+
+#image_box{
+    border: 1px solid black;
+    height: 200px;
+    width: 300px;
+    margin: 10vh auto;
+}
+.bg1{
+    background: url('./images/img1.jfif') no-repeat center/cover;
+}
+.bg2{
+    background: url('./images/img2.jfif') no-repeat center/cover;
+}

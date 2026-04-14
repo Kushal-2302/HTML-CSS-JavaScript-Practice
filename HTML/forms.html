@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Demo form</h1>
+    <!-- <form method="post" action="./Demo.html" target="_blank"> -->
+    <form action="">
+        <fieldset>
+            <legend align="center">Login Details</legend>
+            <label for="">Name :
+                <input type="text" name="fname" placeholder="Enter First Name" required>
+                <input type="text" name="lname" placeholder="Enter Last Name">
+            </label><br><br>
+            <label for="">
+                <input type="password" placeholder="Enter password">
+            </label>
+            <label for="">
+                <input type="email" placeholder="Enter Email">
+            </label>
+        </fieldset>
+
+        <br> <br>
+        <fieldset>
+            <legend align="center">Personal Details</legend>
+            <label for="">Gender :</label>
+            <label for="m">Male</label>
+            <input type="radio" name="gender" value="male" id="m" checked>
+            <label for="f">Female</label>
+            <input type="radio" name="gender" value="female" id="f" disabled>
+            <label for="o">Others</label>
+            <input type="radio" name="gender" value="others" id="o">
+            <br><br>
+
+            <label for="">Language :</label>
+
+            <label for="">English</label>
+            <input type="checkbox" name="lang" value="eng" checked>
+
+            <label for="">Kannada</label>
+            <input type="checkbox" name="lang" value="kan">
+
+            <label for="">XYZ</label>
+            <input type="checkbox" name="lang" value="xyz" disabled>
+            <br><br>
+
+
+            <label for="">
+                Degree :
+                <select name="education" id="">
+                    <option value="bca">BCA</option>
+                    <option value="mca" selected>MCA</option>
+                    <option value="bba">BBA</option>
+                    <option value="mba" disabled>MBA</option>
+
+                </select>
+            </label> <br> <br>
+
+            <label for="">Enter contact number :</label>
+            <input type="tel" placeholder="Enter contact number" pattern="[6-9]{1}[0-9]{9}"> <br> <br>
+
+            <label for="">Website : </label>
+            <input type="url" name="url" placeholder="Enter Website url"> <br> <br>
+
+            <label for="">Searching</label>
+            <input type="search" placeholder="Searching Somthing ..!"> <br> <br>
+
+            <label for="">Date & time</label>
+            <input type="date" name="date">
+            <input type="time" name="time">
+            <input type="datetime-local" name="datetime">
+            <input type="month" name="month">
+            <input type="week" name="weel"> <br><br>
+
+            <label for="">Age :</label>
+            <input type="number" name="age" placeholder="Enter age" min="0" max="99"> <br><br>
+
+            <label for="">Range between 0-10</label>
+            <input type="range" name="count" min="0" max="10"> <br><br>
+
+            <input type="color" name="clr">
+            <input type="file" name="file">
+
+            <br><br>
+            <input type="image"> <br><br>
+
+            <label for="">Textarea :</label>
+            <textarea name="cmnt" id="" placeholder="Message Box" rows="6" cols="60"></textarea>
+
+        </fieldset>
+        <br>
+        <input type="submit">
+    </form>
+</body>
+
+</html>

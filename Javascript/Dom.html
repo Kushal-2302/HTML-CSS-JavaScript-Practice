@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Dom.css">
+</head>
+
+<body onload="setInterval(digitalClock, 1000)">
+
+    <!-- DOM -->
+    <!-- Selecting HTML elements based on ID Name -->
+    <h3>getElementById</h3>
+    <h1 id="title">Document Object Model</h1>
+
+    <!-- this will not work because id select one elememt, it is unique -->
+    <h1 id="title">Document Object Model</h1>
+
+    <button onclick="applyColor()">Apply Color</button>
+    <hr>
+
+    <!-- Selecting HTML elements based on Class Name -->
+
+    <p class="text">Jspider</p>
+    <p class="text">Pyspider</p>
+    <p class="text">Qspider</p>
+
+    <button onclick="textDesign()">Click Here</button>
+    <hr>
+
+
+    <!-- toggle color -->
+    <div id="box"></div>
+    <button onclick="applyRed()">
+        Red color
+    </button>
+    <button onclick="applyYellow()">
+        Yellow Color
+    </button>
+    <hr>
+
+    <!-- onOff button -->
+    <h3>ON_OFF button</h3>
+    <button class="on" onclick="onOff()">
+        ON
+    </button>
+    <hr>
+
+    <!-- change image -->
+    <h3>change Image by clicking</h3>
+    <img src="./images/img1.jfif" alt="" onclick="changeImage()">
+
+    <!-- change image using toggle -->
+    <h3>toggle Image</h3>
+    <div id="image_box" class="bg1" onclick="toggleImage()"></div>
+
+    <hr>
+
+
+    <!-- Digital clock -->
+     <h3>Digital Clock</h3>
+     <div class="container">
+        <div class="display">DATE</div>
+        <div class="display">TIME</div>
+     </div>
+
+    <script src="Dom.js"></script>
+</body>
+
+</html>

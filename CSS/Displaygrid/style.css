@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+#container{
+    background: yellow;
+    display: grid;
+    /* grid-template-columns: auto auto; */
+    /* grid-template-columns: repeat(2, auto); */
+    grid-template-columns: 30vh auto;
+    grid-template-rows: 10vh 15vh 100vh 10vh;
+    grid-template-areas: 
+    "header header"
+    "navbar navbar"
+    "leftside main"
+    "footer footer";
+}
+header , nav , aside , main , footer{
+    text-align: center;
+    place-content: center;
+}
+header{
+    background: lightblue;
+    grid-area: header;
+    /* text-align: center;
+    padding-top: 20px; */
+}
+header ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+header ul a{
+    text-decoration: none;
+    font-weight: bold;
+}
+nav{
+    background: red;
+    grid-area: navbar;
+    /* text-align: center;
+    padding-top: 40px; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+nav .circle{
+    border: 3px solid black;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+aside{
+    background: greenyellow;
+    grid-area: leftside;
+    /* text-align: center;
+    padding-top: 300px; */
+}
+main{
+    background: brown;
+    grid-area: main;
+    /* text-align: center;
+    padding-top: 300px; */
+}
+footer{
+    background: violet;
+    grid-area: footer;
+    /* text-align: center;
+    padding-top: 20px; */
+}
