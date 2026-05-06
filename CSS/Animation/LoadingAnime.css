@@ -13,7 +13,7 @@
     align-items: center;
 
 
-    animation: rotating 1s infinite linear reverse;
+    animation: rotating 3s infinite linear reverse;
     animation-delay: 2s;
 }
 
@@ -28,12 +28,12 @@
     font-weight: bold;
 
     
-    animation: rotating 1s infinite linear;
+    animation: rotating 3s infinite linear;
     animation-delay: 2s;
 
 }
-/* 
-@keyframes rotating {
+
+/* @keyframes rotating {
     0%{
         transform: rotate(0deg);
     }
